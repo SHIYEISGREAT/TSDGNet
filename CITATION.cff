@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Ye"
     given-names: "Shi"
-repository-code: "To be updated"
+repository-code: "https://github.com/SHIYEISGREAT/TSDGNet"
 version: "1.0.0"
 date-released: "2026-04-24"
 license: "MIT"

@@ -1,5 +1,5 @@
 # Checkpoints
 
-This directory is reserved for trained model weights.
+This directory is used to store locally generated model weights.
 
-Checkpoint files such as `.pt`, `.pth`, `.ckpt`, `.json`, and serialized model files are ignored by Git. Do not commit large trained weights directly to the repository. For public release, upload trained weights through GitHub Releases and describe the download link in the main README.
+Checkpoint files are ignored by Git. If pretrained weights are released later, they should be provided through GitHub Releases rather than committed directly to the repository.

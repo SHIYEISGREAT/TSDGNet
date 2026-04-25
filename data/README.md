@@ -1,31 +1,19 @@
-# Data Preparation
+# Data Directory
 
-Place the preprocessed `.npz` gait data file in this directory.
+This directory is used for local data storage. The processed NPZ file is not included in this repository.
 
-Default example path:
+After downloading the original public gait dataset, generate the processed file with:
 
-```text
-data/gait1_preprocessed.npz
+```bash
+python datasets/preprocess_gait1.py \
+  --dataset_root /path/to/downloaded/dataset \
+  --output_dir data/processed
 ```
 
-Required keys:
+The expected generated file is:
 
 ```text
-X
-lengths
-pathology
-subject_id
+data/processed/gait1_preprocessed.npz
 ```
 
-Expected shapes:
-
-```text
-X:          (N, T, 4, 6)
-lengths:    (N,)
-pathology:  (N,)
-subject_id: (N,)
-```
-
-`X` stores the gait sequence. The four nodes correspond to the wearable IMU locations used in the experiment, and each node contains six inertial channels. During training, each sample is converted to `(24, seq_len)` after center cropping or zero padding.
-
-Do not upload private clinical data, personal identifiers, or non-public raw data to GitHub. If the dataset cannot be redistributed, provide only the data format description, preprocessing procedure, and access instructions.
+Do not commit raw datasets or processed NPZ files to this repository.

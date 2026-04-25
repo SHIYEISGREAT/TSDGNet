@@ -1,6 +1,6 @@
 # Baseline Models
 
-This directory contains conventional baseline models used for comparison experiments.
+This directory contains baseline comparison models used in the experiments.
 
 Included scripts:
 
@@ -12,10 +12,4 @@ train_cnn_lstm.py
 train_transformer_encoder.py
 ```
 
-Each script follows the same preprocessed data format and evaluation protocol as the proposed TSDGNet model.
-
-Example:
-
-```bash
-python baselines/train_resnet1d.py --npz_path data/gait1_preprocessed.npz --checkpoint_path checkpoints/best_resnet1d.pt
-```
+Each script follows the same input data format as the main TSDGNet training script.

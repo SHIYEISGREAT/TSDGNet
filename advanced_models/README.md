@@ -1,6 +1,6 @@
 # Advanced Comparison Models
 
-This directory contains advanced comparison models adapted to the same IMU input format and evaluation protocol as TSDGNet.
+This directory contains advanced comparison models used in the experiments.
 
 Included scripts:
 
@@ -15,8 +15,4 @@ train_sgat.py
 train_wctnet.py
 ```
 
-Example:
-
-```bash
-python advanced_models/train_cmafnet.py --npz_path data/gait1_preprocessed.npz --checkpoint_path checkpoints/cmafnet.pt
-```
+Each script follows the same data format and evaluation protocol as the main TSDGNet training script.
