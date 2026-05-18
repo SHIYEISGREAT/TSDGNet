@@ -4,7 +4,7 @@ PyTorch implementation of **TSDGNet** for multi-class lower limb disease gait re
 
 TSDGNet integrates multi-scale temporal feature extraction, dual-graph structural refinement, and class-balanced optimization for lower limb disease recognition from multi-node IMU gait signals.
 
-The manuscript information is intentionally omitted while the work is under review. Formal citation details will be updated after publication.
+The manuscript information is intentionally omitted while the work is under submission. Formal citation details will be updated after publication.
 
 ## Repository Structure
 
